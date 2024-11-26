@@ -4,21 +4,25 @@
 hmtl, body {
   --primary: #416e4e;
   --secondary: #31523a;
-  --neutral: #E2E2E2;
+  --neutral: #edefec;
 
   margin: 0;
   padding: 0;
 
+  user-select: none;
+  overflow: hidden;
+
   h1 {
-    font-size: 5em ;
+    font-size: 4em ;
     font-family: 'Viga', sans-serif;
     color: var(--neutral);
     margin: 0;
   }
 
   p {
-    font-size: 1.2em ;
+    font-size: 1em ;
     font-family: 'Red Hat Display', sans-serif;
     color: var(--neutral);
+    margin: 0;
   }
 }
