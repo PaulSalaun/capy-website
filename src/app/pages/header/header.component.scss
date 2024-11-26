@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  background: var(--neutral);
+  align-items: center;
+  height: 8vh;
+  justify-content: space-between;
+  padding-inline: 16px;
+  img {
+    cursor: pointer;
+    width: 4%;
+    height: auto;
+  }
+  p {
+    color: var(--secondary);
+  }
+}
