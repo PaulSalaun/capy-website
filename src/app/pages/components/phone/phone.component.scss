@@ -1,0 +1,52 @@
+.container {
+  z-index: 0;
+  width: 200px;
+  height: 500px;
+  border: 2px solid #000000;
+  border-radius: 30px;
+  position: relative;
+  background-color: #edefec;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  //padding: 20px;
+  box-sizing: border-box;
+
+  .cam {
+    z-index: 1;
+    width: 10px;
+    height: 10px;
+    background-color: #000;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .display {
+    width: 100%;
+    height: 100%;
+    background-color: #edefec;
+    border-radius: 30px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      z-index: 0;
+      transform: translateY(-25px);
+      border-radius: 30px;
+      width: 100%;
+      height: auto;
+      position: absolute;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+      &.active {
+        opacity: 1;
+      }
+    }
+  }
+}
