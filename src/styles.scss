@@ -19,7 +19,21 @@ hmtl, body {
     margin: 0;
   }
 
-  p {
+  h2 {
+    font-size: 1.5em ;
+    font-family: 'Viga', sans-serif;
+    color: var(--neutral);
+    margin: 0;
+  }
+
+  h3 {
+    font-size: 1.2em ;
+    font-family: 'Red Hat Display', sans-serif;
+    color: var(--neutral);
+    margin: 0;
+  }
+
+  p, ul, li {
     font-size: 1em ;
     font-family: 'Red Hat Display', sans-serif;
     color: var(--neutral);

@@ -1,0 +1,41 @@
+:host {
+  padding-top: 1em;
+  display: flex;
+  flex-direction: column;
+  height: 92vh;
+  width: 100%;
+  background: linear-gradient(90deg, var(--secondary) 0%, var(--primary) 50%, var(--secondary) 100%);
+}
+
+.container {
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  word-wrap: break-word;
+  padding-block: 5em;
+  padding-inline: 20em;
+
+  h2 {
+    font-size: 2em;
+    padding-bottom: 1em;
+  }
+  h3 {
+    display: inline-block;
+    width: fit-content;
+    padding-top: 2em;
+    padding-bottom: 0.5em;
+    border-bottom: 2px solid #428154;
+  }
+  p {
+    padding-top: 1em;
+    line-height: 1.5em;
+    font-size: 0.8em;
+  }
+  ul, li {
+    font-size: 0.9em;
+  }
+  a {
+    color: #edefec;
+  }
+
+}
