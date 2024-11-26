@@ -1,1 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=M+PLUS+1:wght@100..900&family=Viga&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=M+PLUS+1:wght@100..900&family=Poiret+One&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Viga&display=swap');
+
+hmtl, body {
+  --primary: #416e4e;
+  --secondary: #31523a;
+  --neutral: #E2E2E2;
+
+  margin: 0;
+  padding: 0;
+
+  h1 {
+    font-size: 5em ;
+    font-family: 'Viga', sans-serif;
+    color: var(--neutral);
+    margin: 0;
+  }
+
+  p {
+    font-size: 1.2em ;
+    font-family: 'Red Hat Display', sans-serif;
+    color: var(--neutral);
+  }
+}
