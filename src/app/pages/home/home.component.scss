@@ -13,3 +13,18 @@
     padding-top: 2em;
   }
 }
+
+.politics {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 0.5em;
+  a {
+    color: #1d2c21;
+    font-size: 0.7em;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

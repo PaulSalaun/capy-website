@@ -4,6 +4,6 @@ import {HomeComponent} from "./pages/home/home.component";
 
 export const routes: Routes = [
   { path: 'privacy', component: ConditionsComponent },
-  // { path: 'delete-account', component: DeleteAccountComponent },
+  // { path: 'delete', component:  },
   { path: '**', component: HomeComponent }
 ];
