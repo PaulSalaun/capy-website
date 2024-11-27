@@ -1,6 +1,6 @@
 
 .container {
-  padding-top: 1em;
+  padding-top: 5em;
   display: flex;
   flex-direction: column;
   height: 92vh;
@@ -10,7 +10,7 @@
   background: linear-gradient(90deg, var(--secondary) 0%, var(--primary) 50%, var(--secondary) 100%);
 
   .demonstrateur {
-    padding-top: 2em;
+    padding-top: 5em;
   }
 }
 

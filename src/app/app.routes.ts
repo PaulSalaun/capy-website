@@ -4,6 +4,7 @@ import {HomeComponent} from "./pages/home/home.component";
 
 export const routes: Routes = [
   { path: 'privacy', component: ConditionsComponent },
+  { path: 'capy-website/privacy', component: ConditionsComponent },
   // { path: 'delete', component:  },
   { path: '**', component: HomeComponent }
 ];
