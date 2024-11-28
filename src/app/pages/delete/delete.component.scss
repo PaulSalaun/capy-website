@@ -1,16 +1,51 @@
 :host {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  gap: 3rem;
   align-items: center;
   height: 100vh;
   width: 100%;
   background: linear-gradient(90deg, var(--secondary) 0%, var(--primary) 50%, var(--secondary) 100%);
 
-  .container {
-    display: flex;
-    flex-direction: column;
-    border: 2px #edefec solid;
-    padding: 2em;
-    border-radius: 1em;
-  }
+    .descr {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      gap: 1rem;
+      padding-inline: 25%;
+    }
+
+    mat-card {
+      max-width: 50%;
+      background: var(--neutral);
+      border: 2px #edefec solid;
+      padding: 2em;
+      border-radius: 1em;
+      box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      mat-form-field {
+        width: 100%;
+      }
+
+      mat-checkbox {
+        display: block;
+      }
+
+      button {
+        width: 100%;
+      }
+
+      p {
+        color: var(--primary);
+        font-size: .75em;
+      }
+    }
+
+
 }
+

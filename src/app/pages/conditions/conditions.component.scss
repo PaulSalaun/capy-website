@@ -2,7 +2,7 @@
   padding-top: 1em;
   display: flex;
   flex-direction: column;
-  height: 92vh;
+  height: 93vh;
   width: 100%;
   background: linear-gradient(90deg, var(--secondary) 0%, var(--primary) 50%, var(--secondary) 100%);
 }
@@ -12,8 +12,10 @@
   display: flex;
   flex-direction: column;
   word-wrap: break-word;
+  //align-items: baseline;
+  text-align: justify;
   padding-block: 5em;
-  padding-inline: 20em;
+  padding-inline: 20%;
 
   h2 {
     font-size: 2.2em;

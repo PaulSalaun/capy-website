@@ -1,3 +1,26 @@
-<div class="container">
-  <p>OKLM</p>
+<div class="descr">
+  <h2>Suppression de mon compte</h2>
+  <p>Vous souhaitez supprimer votre compte ainsi que toutes vos données associées de Capy ?</p>
 </div>
+
+
+<mat-card>
+  <form [formGroup]="emailForm" (ngSubmit)="onSubmit()">
+    <mat-form-field appearance="outline">
+      <mat-label>Votre email de compte</mat-label>
+      <input matInput type="email" formControlName="email">
+      <mat-error *ngIf="submitted && hasError('email', 'required')">>Veuillez entrer un email.</mat-error>
+      <mat-error *ngIf="submitted && hasError('email', 'email')">Veuillez entrer un email valide.</mat-error>
+    </mat-form-field>
+
+    <mat-checkbox formControlName="acknowledge" touch-target="wrapper">
+      <p>J'ai conscience que mon compte et mes données seront supprimées.*</p>
+    </mat-checkbox>
+    <mat-error *ngIf="submitted && hasError('acknowledge', 'required')">
+      <span>Vous devez cocher la case.</span>
+    </mat-error>
+
+    <button mat-raised-button color="primary" type="submit" [disabled]="emailForm.invalid">Submit</button>
+  </form>
+</mat-card>
+

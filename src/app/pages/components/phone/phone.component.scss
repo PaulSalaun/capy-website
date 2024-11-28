@@ -1,9 +1,9 @@
 .container {
   z-index: 0;
-  width: 250px;
-  height: 550px;
+  width: 20em;
+  height: 35em;
   border: 3px solid #000000;
-  border-radius: 25px;
+  border-radius: 30px;
   position: relative;
   background-color: #edefec;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -36,6 +36,7 @@
 
     img {
       z-index: 0;
+      bottom: -9em;
       border-radius: 30px;
       width: 100%;
       height: auto;
