@@ -9,8 +9,14 @@
     <mat-form-field appearance="outline">
       <mat-label>Votre email de compte</mat-label>
       <input matInput type="email" formControlName="email">
-      <mat-error *ngIf="submitted && hasError('email', 'required')">>Veuillez entrer un email.</mat-error>
+      <mat-error *ngIf="submitted && hasError('email', 'required')">Veuillez entrer un email.</mat-error>
       <mat-error *ngIf="submitted && hasError('email', 'email')">Veuillez entrer un email valide.</mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Votre mot de passe</mat-label>
+      <input matInput type="password" formControlName="password">
+      <mat-error *ngIf="authError">{{ authError }}</mat-error>
     </mat-form-field>
 
     <mat-checkbox formControlName="acknowledge" touch-target="wrapper">

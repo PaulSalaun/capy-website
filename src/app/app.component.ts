@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import {Component} from '@angular/core';
+import {RouterOutlet} from '@angular/router';
 import {HeaderComponent} from "./pages/header/header.component";
 
 @Component({
@@ -9,7 +9,7 @@ import {HeaderComponent} from "./pages/header/header.component";
   standalone: true,
   imports: [
     RouterOutlet,
-    HeaderComponent
+    HeaderComponent,
   ]
 })
 export class AppComponent {
