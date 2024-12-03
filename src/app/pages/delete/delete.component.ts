@@ -31,7 +31,7 @@ export class DeleteComponent {
 
   constructor(
     private fb: FormBuilder,
-    private auth: Auth
+    private auth: Auth, private firebaseService: FirebaseService
   ) {
     this.emailForm = this.fb.group({
       email: ['', [Validators.required, Validators.email]],
@@ -44,17 +44,18 @@ export class DeleteComponent {
     this.submitted = true;
 
     if (this.emailForm.valid) {
-      const { email, password } = this.emailForm.value;
+      const {email, password} = this.emailForm.value;
 
       signInWithEmailAndPassword(this.auth, email, password)
         .then(userCredential => {
-          console.log('User UID:', userCredential.user.uid);
+          this.firebaseService.deleteUserDocument(userCredential.user.uid).then(r =>
+            this.firebaseService.deleteUserAccount(userCredential.user.uid));
         })
         .catch(error => {
           console.error('Error code:', error.code);
           console.error('Error message:', error.message);
 
-          switch(error.code) {
+          switch (error.code) {
             case 'auth/invalid-credential':
               this.authError = 'Email ou mot de passe incorrect';
               break;
